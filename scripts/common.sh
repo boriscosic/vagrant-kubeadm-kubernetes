@@ -6,7 +6,7 @@ set -euxo pipefail
 
 # Variable Declaration
 
-KUBERNETES_VERSION="1.23.6-00"
+KUBERNETES_VERSION="1.24.7-00"
 
 # disable swap
 sudo swapoff -a
@@ -16,9 +16,9 @@ sudo swapoff -a
 sudo apt-get update -y
 # Install CRI-O Runtime
 
-OS="xUbuntu_20.04"
+OS="xUbuntu_22.04"
 
-VERSION="1.23"
+VERSION="1.24"
 
 # Create the .conf file to load the modules at bootup
 cat <<EOF | sudo tee /etc/modules-load.d/crio.conf
